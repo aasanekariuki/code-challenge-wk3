@@ -100,6 +100,24 @@ fetch(baseURL, {
         console.error('error fetching films', error)
     })
 
+
+fetch (baseURL,{
+            method: 'DELETE',
+            headers:{
+                'Content-Type':'application/json'
+            }
+        })
+
+        
+.then((resp)=> {
+
+return resp.json
+
+.then(details=> 
+    
+    {console.log(details)})}
+
+)
 }
     
     
